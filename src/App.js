@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './App.css';
+import './styles/App.scss';
 import Home from './pages/Home';
 import avi from './assets/user-avi.jpg';
 import Button from './components/Button';
