@@ -1,4 +1,5 @@
-import Info from './Info';
+import Info from '../Info/Info';
+import './feedback.scss';
 
 function Feedback(props) {
     return(

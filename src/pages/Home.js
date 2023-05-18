@@ -1,6 +1,6 @@
-import PhotoBox from "../components/PhotoBox";
+import PhotoBox from "../components/PhotoBox/PhotoBox";
 import userAvi from '../assets/user-avi.jpg';
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 
 function Home() {
     return(

@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.nav-links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: $nav-link-color;
+    padding: 25px 0;
+
+    svg {
+        margin-right: 20px;
+    }
+}
+
+.active {
+    color: $box-title-color;
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-links-container {
+        a {
+            white-space: nowrap;
+            overflow: hidden;
+
+            svg {
+                margin-left: 15px;
+                margin-right: 36px;
+            }
+        }
+    }
+}

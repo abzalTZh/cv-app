@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.app-section__address {
+    dl {
+        display: flex;
+        gap: 20px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+
+    dt {
+        color: $box-title-color;
+    }
+
+    dd {
+        font-size: 16px;
+        margin-left: 0;
+
+        a {
+            color: black;
+            text-decoration: none;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $hover-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}

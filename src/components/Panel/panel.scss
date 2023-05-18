@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: $bg-color;
+    flex-shrink: 0;
+    transition: transform 0.5s;
+    margin-right: 40px;
+
+    &.nav-hide {
+        transform: translateX(-250px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    nav {
+        width: 85px;
+        transition: transform 0.5s;
+
+        &.nav-hide {
+            transform: translateX(-85px);
+        }
+    }
+}

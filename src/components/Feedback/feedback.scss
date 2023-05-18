@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.app-section__feedback {
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-reporter {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        cite {
+            font-style: normal;
+        }
+
+        a {
+            text-decoration: none;
+            color: $box-title-color;
+        }
+    }
+}

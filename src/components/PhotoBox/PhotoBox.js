@@ -1,3 +1,5 @@
+import './photoBox.scss';
+
 function PhotoBox(props) {
     const view1 =
         <div className="app-section__panel--user">

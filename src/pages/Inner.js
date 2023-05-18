@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import Panel from "../components/Panel";
-import Box from "../components/Box";
-import TimeLine from "../components/TimeLine";
-import Expertise from "../components/Expertise";
-import Feedback from "../components/Feedback";
+import Panel from "../components/Panel/Panel";
+import Box from "../components/Box/Box";
+import TimeLine from "../components/Timeline/TimeLine";
+import Expertise from "../components/Expertise/Expertise";
+import Feedback from "../components/Feedback/Feedback";
 import feedbackUser from '../assets/feedback-user.jpg';
-import Portfolio from "../components/Portfolio";
-import Address from "../components/Address";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Address from "../components/Address/Address";
 
 function Inner() {
     return(
@@ -81,10 +81,7 @@ function Inner() {
                         }
                     } ]} />
                 </Box>
-                <a id="scroll-up-button" onClick={() => {
-                      document.body.scrollTop = 0;
-                      document.documentElement.scrollTop = 0;
-                }}>
+                <a id="scroll-up-button" href='#about-me'>
                     <FontAwesomeIcon icon={faAngleUp} size="lg" />
                 </a>
             </main>

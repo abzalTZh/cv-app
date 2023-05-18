@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import './button.scss';
 
 function Button(props) {
     let navigate = useNavigate();

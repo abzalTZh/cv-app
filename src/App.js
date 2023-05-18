@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/App.scss';
 import Home from './pages/Home';
 import avi from './assets/user-avi.jpg';
-import Button from './components/Button';
+import Button from './components/Button/Button';
 import Inner from './pages/Inner';
 
 const router = createBrowserRouter([

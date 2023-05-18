@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faPhone, faEnvelope,
  } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faTwitter, faSkype } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faTwitter, faSkype } from "@fortawesome/free-brands-svg-icons";
+import './address.scss'
 
 function Address() {
     return(

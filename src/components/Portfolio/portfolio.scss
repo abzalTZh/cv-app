@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.app-section__filter-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.app-section__portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-elem {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 308px;
+    height: 190px;
+    overflow: hidden;
+
+    &:hover .portfolio-info {
+        transform: translateY(-101%);
+    }
+}
+
+.portfolio-info {
+    width: 281px;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #DDDDDD;
+    padding: 13px;
+
+    h3 {
+        margin-top: 5px;
+    }
+
+    h3, p {
+        margin-bottom: 10px;
+    }
+
+    h3, a {
+        color: $box-title-color;
+    }
+}
+
+.active {
+    color: $box-title-color;
+}

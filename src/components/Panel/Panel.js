@@ -1,9 +1,10 @@
-import PhotoBox from "./PhotoBox";
-import userAvi from "../assets/user-avi.jpg"
-import Navigation from "./Navigation";
-import Button from "./Button";
+import PhotoBox from "../PhotoBox/PhotoBox";
+import userAvi from "../../assets/user-avi.jpg"
+import Navigation from "../Navigation/Navigation";
+import Button from "../Button/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
+import './panel.scss';
 
 function Panel() {
     return(

@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.app-section__info-box {
+    width: 95%;
+
+    h2 {
+        color: $box-title-color;
+        margin-bottom: 40px;
+    }
+}

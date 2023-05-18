@@ -1,0 +1,51 @@
+.user-content {
+    color: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: width 0.2s;
+}
+
+.home-user-avi {
+    border-radius: 50%;
+}
+
+.home-user-avi,
+.user-content h1,
+.user-content h2,
+.home-desc {
+    margin: 5px 0;
+}
+
+.app-section__panel--user {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+
+    img {
+        width: 120px;
+    }
+
+    h3 {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .user-content {
+        width: 300px;
+        transition: width 0.2s;
+    }
+
+    .app-section__panel--user {
+        font-size: 0;
+
+        img {
+            width: 65px;
+        }
+    }
+}

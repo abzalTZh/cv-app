@@ -1,3 +1,5 @@
+import './info.scss';
+
 function Info(props) {
     return (
         <div className="app-section__info">

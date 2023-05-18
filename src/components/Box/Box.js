@@ -1,3 +1,5 @@
+import './box.scss'
+
 function Box(props) {
     return(
         <section className="app-section__info-box" id={props.id}>

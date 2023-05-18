@@ -1,3 +1,5 @@
+import './expertise.scss';
+
 function Expertise(props) {
     return(
         <div className="app-section__expertise-list">
