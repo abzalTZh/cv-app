@@ -1,4 +1,5 @@
-import Info from "./Info";
+import Info from "../Info/Info";
+import './timeline.scss'
 
 function TimeLine(props) {
     return(
