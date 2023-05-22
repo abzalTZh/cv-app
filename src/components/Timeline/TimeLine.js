@@ -18,7 +18,9 @@ function TimeLine() {
 
     if (status === 'loading') {
         return(
-            <FontAwesomeIcon className="app-section__timeline--loading" icon={faRotate} size="xl" />
+            <div className="loading-bar" data-testid="loading-test">
+                <FontAwesomeIcon className="app-section__timeline--loading" icon={faRotate} size="xl" />
+            </div>
         )
     } else if (status === 'success') {
         return(

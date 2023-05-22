@@ -1,8 +1,14 @@
 import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from './app/store';
 import App from './App';
+
+const mockedUsedNavigate = jest.fn();
+jest.mock('react-router-dom', () => ({
+    ...(jest.requireActual('react-router-dom')),
+    useNavigate: () => mockedUsedNavigate,
+}))
 
 describe('index.js', () => {
     it('should render main page', () => {
