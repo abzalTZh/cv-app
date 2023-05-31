@@ -1,14 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
-const storeSkills = (skills) => {
-    localStorage.setItem('skills', JSON.stringify(skills));
-};
-
-const getStoredSkills = () => {
-    const storedSkills = localStorage.getItem('skills');
-    return storedSkills ? JSON.parse(storedSkills) : null;
-};
+import { storeSkills } from "../../utilities/storeSkills";
+import { getStoredSkills } from "../../utilities/getStoredSkills";
 
 export const fetchSkills = createAsyncThunk(
     'content/fetchSkills',
