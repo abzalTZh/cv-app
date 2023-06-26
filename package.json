@@ -7,7 +7,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",
@@ -18,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:coverage": "npm test -- --coverage --watchAll=false",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -38,15 +39,37 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 40,
+        "functions": 40,
+        "lines": 40,
+        "statements": 40
+      }
+    }
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/user-event": "^14.4.3",
     "axios": "^1.4.0",
+    "formik": "^2.2.9",
     "isotope-layout": "^3.0.6",
     "miragejs": "^0.1.47",
+    "msw": "^1.2.1",
     "react-redux": "^8.0.5",
-    "sass": "^1.62.1"
+    "redux-persist": "^6.0.0",
+    "sass": "^1.62.1",
+    "husky": "^8.0.0"
   }
 }

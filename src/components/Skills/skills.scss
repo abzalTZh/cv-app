@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+form {
+    border: 1px solid $box-title-color;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 40px;
+
+    input {
+        width: 15%;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        border: 1px solid #667081;
+        border-radius: 5px;
+
+        &.input-error {
+            border: 1px solid red;
+            color: red;
+        }
+    }
+
+    div {
+        color: red;
+    }
+}
+
+.skills-elem {
+    background-color: $box-title-color;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 5px 0px;
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.skills-metrics {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    &__scale {
+        td {
+            padding: 4px 0;
+            margin-top: 10px;
+            border: 1px solid #667081;
+            border-top: none;
+            border-collapse: collapse;
+        }
+    }
+
+    &__scale-label {
+        border: none;
+        font-size: 12px;
+        color: #667081;
+
+        td {
+            width: calc(100%/3);
+        }
+    }
+}

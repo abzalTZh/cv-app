@@ -37,6 +37,19 @@ body {
     }
 }
 
+#skills {
+    .app-section__info-box--container {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 550px) {
     #main-inner {
         &.nav-hide {

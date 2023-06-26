@@ -5,14 +5,14 @@ function Button(props) {
     let navigate = useNavigate();
     function handleClick() {
         if (props.to) navigate(props.to);
-        else {
+        if (props.onClick) {
             const clickFunc = props.onClick;
             clickFunc();
         }
     }
 
     return (
-        <button className="app-section__button" id={props.id} type="button" onClick={handleClick}>
+        <button className="app-section__button" id={props.id} type={props.type ? `${props.type}` : 'button'} onClick={handleClick} disabled={props.disabled}>
             <span>
                 {props.icon}
             </span>
